@@ -1,0 +1,15 @@
+{
+  "name": "geektrust-problem1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/*/*.js",
+    "start": "node ./index.js"
+  },
+  "author": "swayam",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^6.0.2"
+  }
+}
