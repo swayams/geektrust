@@ -1,7 +1,7 @@
 {
-  "name": "geektrust-problem1",
+  "name": "geektrust-problems",
   "version": "1.0.0",
-  "description": "",
+  "description": "all geektrust problem solutions",
   "main": "index.js",
   "scripts": {
     "test": "mocha ./test/*/*.js",
