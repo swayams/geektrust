@@ -7,13 +7,14 @@ const EmptyArgumentsException = require('../lib/types')
         this.name = name
         this.symbol = symbol
         this.allies = []
+        
     }
     
     
 
     processMessage(message ) {
         if( !message || message.length === 0) {
-            throw new EmptyArgumentsException()
+            throw new EmptyArgumentsException(message)
         }
 
        return message.hasAllCharsOfString(this.symbol) 
@@ -35,4 +36,6 @@ const EmptyArgumentsException = require('../lib/types')
     } 
 }
 
-module.exports = Kingdom
+module.exports = function createKingdom( name, symbol) {
+    return new Kingdom(name, symbol)
+}

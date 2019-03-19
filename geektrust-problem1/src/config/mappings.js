@@ -3,8 +3,9 @@ const Emblems =  {
     water: "octopus",
     fire: 'dragon',
     air: 'owl',
-    space: 'gorilla'
+    space: 'gorilla',
+    ice: 'mammoth'
 
 }
 
-export { Emblems }
+module.exports = { Emblems }

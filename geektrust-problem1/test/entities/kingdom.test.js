@@ -8,12 +8,12 @@ const testKingdom = new Kingdom('marlyn', 'monroe')
 describe('Kingdoms', function(){
     describe('#processMessage()', function(){
         it('should throw error if function is invoked without any parameters', function() {
-            assert.throws(testKingdom.processMessage(), new EmptyArgumentsException(), "error thrown")
+            assert.throws(senderKingdom.processMessage, EmptyArgumentsException, "Error")
         })
     })
     describe('#sendMessage()', function(){
         it('should throws if function is invoked without any parameters', function() {
-            assert.throws(senderKingdom.sendMessage(), new EmptyArgumentsException(), "error")
+            assert.throws(senderKingdom.sendMessage, EmptyArgumentsException, "error")
         })
         it('should be added to sender kingdom\'s allies  if the message contains characters of all the kingdom\'s symbols', function() {
             senderKingdom.allies = []

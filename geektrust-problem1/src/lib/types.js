@@ -1,7 +1,7 @@
 
 
-function EmptyArgumentsException(message = 'function invoked without any parameter') {
-    this.message = message
+function EmptyArgumentsException(message ) {
+    this.message =  'function invoked without any parameter: input ' + message
     this.name = 'Empty Arguments Exception'
     this.code = 1
 }
