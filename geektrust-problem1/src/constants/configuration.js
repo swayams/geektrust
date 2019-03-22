@@ -8,4 +8,6 @@ const Emblems =  {
 
 }
 
-module.exports = { Emblems }
+const VotesToWin = 3
+
+module.exports = { Emblems, VotesToWin }

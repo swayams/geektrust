@@ -1,5 +1,5 @@
 const Kingdom  =  require('./Kingdom')
-const { Emblems } =  require('../config/mappings')
+const { Emblems } =  require('../constants/configuration')
 
 const ListOfKingdoms = []
 //initializing Kingdoms

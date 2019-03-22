@@ -22,8 +22,14 @@ describe('Kingdoms', function(){
         })
         it('shouldn\'t be added to sender kingdom\'s allies  if the message doesn\'t contains characters of all the kingdom\'s symbols', function() {
             senderKingdom.allies = []
-            senderKingdom.sendMessage(testKingdom, 'xxxmonoexxx'), false
+            senderKingdom.sendMessage(testKingdom, 'xxxmonoexxx')
             assert.equal(senderKingdom.allies.length, 0)
+        })
+        it('shouldn\'t be added to sender kingdom\'s allies if its already in the kingdom\'s allies list', function() {
+            senderKingdom.allies = []
+            senderKingdom.sendMessage(testKingdom, 'xxxmonroexxx')
+            senderKingdom.sendMessage(testKingdom, 'xxxmonroeyyy')
+            assert.equal(senderKingdom.allies.length, 1)
         })
     })
 })

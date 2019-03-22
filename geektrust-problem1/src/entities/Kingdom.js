@@ -24,7 +24,7 @@ const EmptyArgumentsException = require('../lib/types')
     sendMessage( receiver, message) {
         if( !message || message.length === 0 || !receiver || Object.keys(receiver).length === 0) {
             throw new EmptyArgumentsException()
-            return false
+            
         }
         if(this.allies.indexOf(receiver) === -1) {
             if(receiver.processMessage(message)) {
@@ -32,6 +32,7 @@ const EmptyArgumentsException = require('../lib/types')
             }    
         } else {
             console.log('this team is already an al')
+            return false;
         }  
     } 
 }
