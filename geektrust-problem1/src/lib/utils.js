@@ -9,6 +9,7 @@
           if(index === -1) {
             isValid = false
             return false
+            
           } else {
             thisArr.splice(index, 1)
             return true

@@ -32,5 +32,7 @@ const problem2 = [
     "Walar Morghulis: All men must die."
 ]
 
+problem2.claimants = ['Air', 'Space']
+
 
 module.exports = { problem1, problem2 }

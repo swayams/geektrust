@@ -6,7 +6,7 @@ Array.prototype.randomIndex = function () {
 
 
 function pickMessages ( AllMessages ) {
-    console.log(AllMessages.length)
+    
     const MsgArray = []
     while (MsgArray.length < 6) {
         let index = AllMessages.randomIndex()

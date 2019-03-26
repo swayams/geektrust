@@ -26,9 +26,25 @@ try {
     var { problem2 } = require('./src/constants/input')
     
     const { ballot } = require('./src/entities/Electon')
-    const messages = ballot(problem2)
-    c
-   
+    
+
+    let claimants = []
+    problem2.claimants.forEach( c => 
+        ListOfKingdoms.array.forEach( k => 
+            { 
+               k.name.toUpperCase() === c.toUpperCase() ? claimants.push(k) : ''
+            }
+        )
+    )
+    // const otherKingdoms = ListOfKingdoms.filter( kingdom => 
+    //     claimants.filter( c => 
+    //         c.toUpperCase() === kingdom.name.toUpperCase()).length === 0
+    // )
+
+
+
+    
+    console.log(claimants)
 
 } catch (error) {
     console.log(error)
