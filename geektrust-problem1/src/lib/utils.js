@@ -19,6 +19,10 @@
        
     }
 
+    String.prototype.toCamelCase = function capitalizeFirstCharacter () {
+      return this.charAt(0).toUpperCase() + this.slice(1)
+    }
+
     
 })()
 

@@ -1,5 +1,5 @@
 var assert = require('assert')
-const EmptyArgumentsException = require('../../src/lib/types')
+const { EmptyArgumentsException } = require('../../src/lib/types')
 const Kingdom = require('../../src/entities/Kingdom')
 
 const senderKingdom = new Kingdom('gregory', 'peck')

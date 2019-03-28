@@ -10,4 +10,6 @@ const Emblems =  {
 
 const VotesToWin = 3
 
-module.exports = { Emblems, VotesToWin }
+const RandomMessagesToBeProcessedCount = 6
+
+module.exports = { Emblems, VotesToWin, MsgCount: RandomMessagesToBeProcessedCount }

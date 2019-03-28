@@ -20,35 +20,18 @@ try {
     const result = ShansKingdom.allies.length >= VotesToWin ? 
                     "Shan is the new ruler of Westerios" : 
                     "Shan failed to get the requisite votes" 
+    
     console.log(`Problem 1: ${result}`)
         
     //problem 2
-    var { problem2 } = require('./src/constants/input')
+    var { problem2 } = require('./src/constants/input')    
+    const { ballot } = require('./src/entities/Electon')    
     
-    const { ballot } = require('./src/entities/Electon')
     
-
-    let claimants = []
-    problem2.claimants.forEach( c => 
-        ListOfKingdoms.array.forEach( k => 
-            { 
-               k.name.toUpperCase() === c.toUpperCase() ? claimants.push(k) : ''
-            }
-        )
-    )
-    // const otherKingdoms = ListOfKingdoms.filter( kingdom => 
-    //     claimants.filter( c => 
-    //         c.toUpperCase() === kingdom.name.toUpperCase()).length === 0
-    // )
-
-
-
-    
-    console.log(claimants)
+    ballot(problem2)
 
 } catch (error) {
     console.log(error)
-    
 }
 
 

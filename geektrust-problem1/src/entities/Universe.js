@@ -7,4 +7,8 @@ Object.keys(Emblems).forEach(kingdom => {
     ListOfKingdoms.push(Kingdom(kingdom, Emblems[kingdom]))
 });
 
-module.exports = { ListOfKingdoms }
+function resetKingdoms() {
+    ListOfKingdoms.forEach( k => k.allies = [])
+}
+
+module.exports = { ListOfKingdoms, resetKingdoms }

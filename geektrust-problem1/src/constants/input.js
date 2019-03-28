@@ -4,7 +4,8 @@ const problem1 = [
     [ "ice"  , "zmzmzmzaztzozh"]
 ]
 
-const problem2 = [
+const problem2 = {}
+problem2.messages = [
     "Summer is coming",
     "a1d22n333a4444p",
     "oaaawaala",
@@ -32,7 +33,7 @@ const problem2 = [
     "Walar Morghulis: All men must die."
 ]
 
-problem2.claimants = ['Air', 'Space']
+problem2.claimants = ['air', 'space']
 
 
 module.exports = { problem1, problem2 }

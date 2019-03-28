@@ -1,6 +1,6 @@
 
 require('../lib/utils')
-const EmptyArgumentsException = require('../lib/types')
+const { EmptyArgumentsException } = require('../lib/types')
 
  class Kingdom {
     constructor( name, symbol ) {
@@ -24,14 +24,14 @@ const EmptyArgumentsException = require('../lib/types')
     sendMessage( receiver, message) {
         if( !message || message.length === 0 || !receiver || Object.keys(receiver).length === 0) {
             throw new EmptyArgumentsException()
-            
         }
+        
         if(this.allies.indexOf(receiver) === -1) {
             if(receiver.processMessage(message)) {
                 this.allies.push(receiver)
             }    
         } else {
-            console.log('this team is already an al')
+            console.log(`${receiver.name.toCamelCase()} is already an ally of ${this.name.toCamelCase()}`)
             return false;
         }  
     } 
